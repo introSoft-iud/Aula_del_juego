@@ -1,8 +1,9 @@
-site_name: Diplomado en Aplicaciones asistidas por IA
-site_description: Diplomado en Aplicaciones asistidas por IA
+site_name: Aula del Juego de la Intitucion Universitaria Digital de Antioquia
+site_description: sito web del Aula del Juego de la Intitucion Universitaria Digital de Antioquia
 site_author: Intitucion iniversitaria Digital de Antioquia
 
 site_url: https://sitename.example
+
 theme:
   name: material
   font:
@@ -10,20 +11,18 @@ theme:
     code: Red Hat Mono
   icon:
     logo: material/robot
-    
   favicon: assets/favicon.ico
   features:
     - navigation.footer
-    - content.code.copy  # Enable copy code button
+    - content.code.copy
   palette:
-    # Dark Mode
+    # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Dark mode
       primary: green
       accent: deep purple
-
     # Light Mode
     - scheme: default
       toggle:
@@ -35,11 +34,6 @@ theme:
 markdown_extensions:
   - attr_list
   - md_in_html
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -50,15 +44,37 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 extra_css:
- - css/custom.css
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
 nav:
-  - Presentación del curso: index.md
-  - Unidad 1: Unidad 1/index.md
-  - Unidad 2: Unidad2/unidad2.md
-  - Unidad 3: Unidad3/unidad3.md
+  - Página principal: index.md
+  - Cálculo:
+      - La Esencia del cálculo: calculo/Esencia_calc.md
+      - Calculando áreas: calculo/cuadrado.md
+      
+  - Física:
+      - Laboratorio de Física II: fisicaII/laboratorio_fisicaII.md

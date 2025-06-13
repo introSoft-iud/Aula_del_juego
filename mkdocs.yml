@@ -15,6 +15,9 @@ theme:
   features:
     - navigation.footer
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
   palette:
     # Dark Mode
     - scheme: slate

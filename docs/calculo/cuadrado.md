@@ -66,3 +66,4 @@ Ya tienes tu respuesta, compárala con esta:
 
     $$ A_{\triangle} = \frac{1}{2} b \times h $$
     
+    la famosa frase *base por altura dividido 2*

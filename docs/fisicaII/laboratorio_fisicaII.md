@@ -5,6 +5,7 @@
 - Observar y analizar el movimiento de un péndulo simple.
 - Determinar cómo la longitud de la cuerda afecta el período de oscilación.
 - Explicar el fenómeno físico del movimiento armónico simple.
+- Analizar situaciones similares.
 
 ## Materiales Necesarios
 

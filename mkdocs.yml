@@ -79,5 +79,12 @@ nav:
       - La Esencia del cálculo: calculo/Esencia_calc.md
       - Calculando áreas: calculo/cuadrado.md
       
+  #- Física:
+  #    - Laboratorio de Física II: fisicaII/laboratorio_fisicaII.md
+      
+  
   - Física:
-      - Laboratorio de Física II: fisicaII/laboratorio_fisicaII.md
+      - Laboratorio de Física II:
+          - Introducción: fisicaII/laboratorio_fisicaII/intro.md
+          - Lab 1: fisicaII/laboratorio_fisicaII/oscilaciones.md
+         

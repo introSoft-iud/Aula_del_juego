@@ -58,7 +58,7 @@ mkdocs build
 
 El sitio ha sido desplegado y está disponible en la siguiente URL:
 
-[https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad%201/](https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad%201/)
+[Aula del juego portal](https://introSoft-iud.github.io/Aula_del_juego/)
 
 <!-- Para desplegar uso 
 
